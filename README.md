@@ -1,8 +1,8 @@
-###**Laboratorio de Sistemas Operativos: Introducción al lenguaje C**
+# **Laboratorio de Sistemas Operativos: Introducción al lenguaje C**
 
-##**Práctica No. 1**
+## **Práctica No. 1**
 
-#**a) Integrantes:**
+### **a) Integrantes:**
 
 - Michael Stiven Tabares Tobón
 Correo: michael.tabares@udea.edu.co
@@ -12,7 +12,7 @@ Cédula: -------
 Correo: mariaf.atencia@udea.edu.co
 Cédula: 1064980223
 
-#**b)  Documentación de todas las funciones desarrolladas en el código.**
+### **b)  Documentación de todas las funciones desarrolladas en el código.**
 
 - **Wcat**
     - *Descripción:* Esta función se encarga de leer el contenido de uno o más archivos pasados como argumentos en la línea de comandos y mostrarlo en la salida estándar (pantalla).
@@ -71,14 +71,14 @@ Cédula: 1064980223
         5. Para cada par leído, se escribe en la salida estándar el carácter repetido la cantidad de veces indicada por el número (por ejemplo, "3a" se expandiría a "aaa").
         6. Finalmente, se cierra el archivo con `fclose()` y se continúa con el siguiente archivo hasta procesar todos los argumentos.
 
-# **c) Problemas presentados durante el desarrollo de la práctica y sus soluciones**
+### **c) Problemas presentados durante el desarrollo de la práctica y sus soluciones**
 
 - **Problema 1:** Uno de los inconvenientes presentados tuvo que ver mas que todo con el entorno de desarrollo para probar C, puesto que los programas utilizados para compilar estaban presentando muchos problemas en el computador con Windows.
 - **Solución:** Para solucionar este problema se decidió utilizar un entorno software diferente, instalando MSYS2 y luego mingw64 para poder utilizar de forma eficiente el compilador de C gcc.
 - **Problema 2:** Dado que anteriormente no se había trabajado nunca con C, entonces los conceptos de los argumentos argc y argv fueron difíciles de entender de primer mano.
 - **Solución:** Se realizó una investigación exhaustiva sobre cómo funcionan los parámetros de línea de comandos en C, se estudiaron ejemplos prácticos y se implementaron pruebas iterativas con diferentes combinaciones de argumentos para consolidar el conocimiento.
 
-#**d) Pruebas realizadas a los programas que verificaron su funcionalidad.**
+### **d) Pruebas realizadas a los programas que verificaron su funcionalidad.**
 - **Prueba de Wcat:**
     - Comando utilizado: './wcat.exe archivo2.txt archivo3.txt'
     - Resultado esperado: El contenido de ambos archivos se muestra en la salida estándar.
@@ -102,7 +102,7 @@ Cédula: 1064980223
     - Resultado obtenido: El programa descomprimió correctamente el archivo, confirmando que la función Wunzip funciona como se esperaba.
     ![Prueba de las acplicaciones wzip y wunzip](img/PruebaWzip-Wunzip.png)
 
-# **e) Un enlace a un video de 10 minutos donde se sustente el desarrollo.**
+### **e) Un enlace a un video de 10 minutos donde se sustente el desarrollo.**
 
 Link de acceso al video: -----
 
