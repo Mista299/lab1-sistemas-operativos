@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
     // Recorrer cada archivo pasado por argumentos
     for (int i = 1; i < argc; i++) {
-        FILE *fp = fopen(argv[i], "r");
+        FILE *fp = fopen(argv[i], "rb");
         if (fp == NULL) {
             printf("wunzip: cannot open file\n");
             exit(1);
@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) {
         char c;
 
         // Leer bloques de 5 bytes: [int][char]
-        while (fread(&count, sizeof(int), 1, fp) == 1) {
-            fread(&c, sizeof(char), 1, fp);
+        while (fread(&count, sizeof(int), 1, fp) == 1 &&
+       fread(&c, sizeof(char), 1, fp) == 1) {
 
             // Imprimir el caracter 'count' veces
             for (int j = 0; j < count; j++) {

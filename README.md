@@ -70,3 +70,40 @@ Cédula: 1064980223
         4. Si el archivo se abre correctamente, se lee su contenido carácter por carácter usando `fgetc()`, interpretando cada par de caracteres como un número (cantidad) seguido de un carácter (el carácter a repetir).
         5. Para cada par leído, se escribe en la salida estándar el carácter repetido la cantidad de veces indicada por el número (por ejemplo, "3a" se expandiría a "aaa").
         6. Finalmente, se cierra el archivo con `fclose()` y se continúa con el siguiente archivo hasta procesar todos los argumentos.
+
+# **c) Problemas presentados durante el desarrollo de la práctica y sus soluciones**
+
+- **Problema 1:** Uno de los inconvenientes presentados tuvo que ver mas que todo con el entorno de desarrollo para probar C, puesto que los programas utilizados para compilar estaban presentando muchos problemas en el computador con Windows.
+- **Solución:** Para solucionar este problema se decidió utilizar un entorno software diferente, instalando MSYS2 y luego mingw64 para poder utilizar de forma eficiente el compilador de C gcc.
+- **Problema 2:** Dado que anteriormente no se había trabajado nunca con C, entonces los conceptos de los argumentos argc y argv fueron difíciles de entender de primer mano.
+- **Solución:** Se realizó una investigación exhaustiva sobre cómo funcionan los parámetros de línea de comandos en C, se estudiaron ejemplos prácticos y se implementaron pruebas iterativas con diferentes combinaciones de argumentos para consolidar el conocimiento.
+
+#**d) Pruebas realizadas a los programas que verificaron su funcionalidad.**
+- **Prueba de Wcat:**
+    - Comando utilizado: './wcat.exe archivo2.txt archivo3.txt'
+    - Resultado esperado: El contenido de ambos archivos se muestra en la salida estándar.
+    - Resultado obtenido: El programa mostró correctamente el contenido de ambos archivos, confirmando que la función Wcat funciona como se esperaba.
+    ![Prueba de la aplicación wcat](img/PruebaWcat.png)
+
+- **Prueba de Wgrep:**
+    - Comando utilizado: './wgrep.exe "cadena a buscar" archivo2.txt archivo3.txt'
+    - Resultado esperado: Se muestran solo las líneas que contienen la cadena especificada.
+    - Resultado obtenido: El programa filtró correctamente las líneas que contenían la cadena buscada, confirmando que la función Wgrep funciona como se esperaba.
+    ![Prueba de la aplicación wgrep](img/PruebaWgrep.png)
+
+- **Prueba de Wzip**
+    - Comando utilizado: './wzip.exe archivo3.txt > archivo3.z'
+    - Resultado esperado: Se genera un nuevo archivo comprimido con el contenido de archivo3.txt.
+    - Resultado obtenido: El programa creó correctamente el archivo comprimido, confirmando que la función Wzip funciona como se esperaba.
+
+- **Prueba de Wunzip**
+    - Comando utilizado: './wunzip.exe archivo3.z'
+    - Resultado esperado: Se genera un nuevo archivo descomprimido que coincide con el contenido original de archivo3.txt.
+    - Resultado obtenido: El programa descomprimió correctamente el archivo, confirmando que la función Wunzip funciona como se esperaba.
+    ![Prueba de las acplicaciones wzip y wunzip](img/PruebaWzip-Wunzip.png)
+
+# **e) Un enlace a un video de 10 minutos donde se sustente el desarrollo.**
+
+Link de acceso al video: -----
+
+# **f) Manifiesto de transparencia: En que puntos se apoyaron de la IA generativa.**
