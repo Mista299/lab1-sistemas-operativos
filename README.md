@@ -6,7 +6,7 @@
 
 - Michael Stiven Tabares Tobón
 Correo: michael.tabares@udea.edu.co
-Cédula: -------
+Cédula: 1036943803
 
 - Maria Fernanda Atencia Oliva
 Correo: mariaf.atencia@udea.edu.co
@@ -104,7 +104,7 @@ Cédula: 1064980223
 
 ### **e) Un enlace a un video de 10 minutos donde se sustente el desarrollo.**
 
-Link de acceso al video: -----
+Link de acceso al video: [Video de sustentación](https://drive.google.com/file/d/1GAcFqF3Qdxt98zFUUGepDu9RpPWUkwkF/view?usp=sharing)
 
 ### **f) Manifiesto de transparencia: En que puntos se apoyaron de la IA generativa.**
 
