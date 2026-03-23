@@ -33,14 +33,18 @@ Cédula: 1064980223
         - argv: arreglo de cadenas que contiene los argumentos pasados al programa, donde el primer argumento (argv[1]) es la cadena a buscar y los siguientes (argv[2] en adelante) son los nombres de los archivos a revisar.
     - *Retorno:* Devuelve **0** si la función se ejecuta correctamente, o **1** si ocurre un error al abrir alguno de los archivos (por ejemplo, argumentos insuficientes o fallo al abrir un archivo).
     - *Funcionamiento:*
+ 
         1.Verifica que se haya proporcionado al menos la cadena de búsqueda; si no, muestra un mensaje de uso y finaliza.
+      
         2. Si solo se dio la cadena (argc == 2), lee de la entrada estándar con getline() e imprime las líneas que contienen la cadena (sin resaltado).
+
         3. Si se pasaron archivos (argc > 2), recorre cada uno desde argv[2]:
            
             * Intenta abrirlo con fopen(). Si falla, muestra un error y termina con código 1.
             * Lee línea por línea con getline(). Para cada línea que contenga la cadena (mediante strstr()), llama a print_highlight() para imprimir la línea resaltando las ocurrencias en rojo usando códigos ANSI.
               
          4. Finalmente libera la memoria de la línea y cierra el archivo con fclose().
+     
 - **Wzip**
     - *Descripción:* Esta función comprime el contenido de uno o más archivos pasados como argumentos en la línea de comandos utilizando una técnica de compresión simple basada en la repetición de caracteres.
     - *Parámetros:* 
